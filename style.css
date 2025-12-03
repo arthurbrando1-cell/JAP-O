@@ -1,19 +1,13 @@
-/* =====================
-   VARIÁVEIS GLOBAIS
-   ===================== */
 :root {
-  --accent: #ff6b35;       /* Cor principal para destaques e botões */
-  --muted: #6b7280;        /* Cor para textos secundários e rodapé */
-  --bg: #f7f9fb;           /* Cor de fundo geral da página */
-  --card: #ffffff;          /* Fundo das seções */
-  --radius: 14px;           /* Bordas arredondadas gerais */
-  --shadow: 0 6px 20px rgba(10,14,20,0.05); /* Sombra padrão para cards */
+  --accent: #ff6b35;
+  --muted: #6b7280;
+  --bg: #f7f9fb;
+  --card: #ffffff;
+  --radius: 14px;
+  --shadow: 0 6px 20px rgba(10,14,20,0.05);
   font-family: "Inter", Arial, sans-serif;
 }
 
-/* =====================
-   ESTILO GERAL
-   ===================== */
 body {
   margin: 0;
   background: var(--bg);
@@ -21,9 +15,6 @@ body {
   line-height: 1.6;
 }
 
-/* =====================
-   HEADER
-   ===================== */
 header {
   background: #0b1320;
   color: #fff;
@@ -43,9 +34,6 @@ header p {
   font-size: 18px;
 }
 
-/* =====================
-   MENU / NAV
-   ===================== */
 nav {
   display: flex;
   justify-content: center;
@@ -59,22 +47,16 @@ nav {
 }
 
 nav a {
-  text-decoration: none;
-  color: #0b1320;
-  font-weight: 600;
   padding: 8px 14px;
   border-radius: 8px;
+  font-weight: 600;
   transition: all 0.3s ease;
 }
 
 nav a:hover {
   background: #eef3fa;
-  color: var(--accent);
 }
 
-/* =====================
-   CONTAINERS PRINCIPAIS
-   ===================== */
 .container {
   max-width: 900px;
   margin: 40px auto;
@@ -88,30 +70,23 @@ nav a:hover {
   margin-top: 0;
   font-size: 28px;
   font-weight: 800;
-  color: #0b1320;
 }
 
-.container p {
+.container p, .container li {
   font-size: 16px;
   color: #333;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
-/* =====================
-   LISTAS
-   ===================== */
 ul {
   padding-left: 20px;
 }
 
 ul li {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   line-height: 1.5;
 }
 
-/* =====================
-   ROTEIRO DIAS
-   ===================== */
 .dia {
   background: #f2f6fb;
   padding: 18px;
@@ -126,37 +101,30 @@ ul li {
   box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
 
-/* =====================
-   SEÇÃO DESTAQUE (COMPRA)
-   ===================== */
 .destaque {
   border-left: 6px solid var(--accent);
   background: #fff4f0;
 }
 
-/* =====================
-   BOTÃO
-   ===================== */
-button {
+.botao-comprar {
+  display: inline-block;
   background: var(--accent);
   color: #fff;
-  border: none;
-  padding: 16px 24px;
+  padding: 14px 24px;
   border-radius: 12px;
   font-size: 16px;
   font-weight: 700;
-  cursor: pointer;
+  text-align: center;
   transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-button:hover {
+.botao-comprar:hover {
   opacity: 0.9;
   transform: translateY(-2px);
 }
 
-/* =====================
-   FOOTER
-   ===================== */
 footer {
   text-align: center;
   padding: 30px;
@@ -166,27 +134,6 @@ footer {
   box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
 }
 
-/* =====================
-   ELEMENTOS ADICIONAIS
-   ===================== */
-/* Subtítulos e pequenos ícones */
-h3 {
-  font-size: 20px;
-  margin-bottom: 8px;
-  color: #0b1320;
-}
-
-/* Links dentro do conteúdo */
-.container a {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-.container a:hover {
-  text-decoration: underline;
-}
-
-/* Responsividade */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
