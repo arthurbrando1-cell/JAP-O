@@ -7,17 +7,87 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #ef5350;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #d32f2f;
+      padding: 1rem 0;
+      gap: 2rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .dia {
+      background-color: #ffebee;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-left: 6px solid #ef5350;
+      border-radius: 5px;
+    }
+    .destaque {
+      background-color: #ffccbc;
+      text-align: center;
+    }
+    button {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border: none;
+      background-color: #ef5350;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    button:hover {
+      background-color: #d32f2f;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #d32f2f;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
 
   <header>
     <h1>🌏 Pacote Turístico: Japão – 5 Dias Incríveis</h1>
-    <p>Explore Tóquio, Shibuya, Hiroshima, Osaka e Quioto</p>
+    <p>Explore Tóquio, Shibuya, Hiroshima, Osaka e Quioto com conforto e cultura</p>
   </header>
 
   <nav>
     <a href="#sobre">Sobre</a>
     <a href="#roteiro">Roteiro</a>
+    <a href="#cultura">Cultura</a>
     <a href="#geopolitica">Geopolítica</a>
     <a href="#contato">Comprar</a>
   </nav>
@@ -26,8 +96,8 @@
   <section id="sobre" class="container">
     <h2>🇯🇵 Sobre o Japão</h2>
     <p>
-      O Japão é um arquipélago no leste da Ásia, conhecido por sua fusão entre tradição milenar,
-      alta tecnologia e paisagens marcantes. Este pacote leva você aos destinos mais icônicos do país.
+      O Japão é um arquipélago localizado no leste da Ásia, famoso por sua harmoniosa fusão de tradição e modernidade. 
+      Este pacote permite que você conheça as cidades mais icônicas do país, seus monumentos históricos, tecnologia avançada e paisagens naturais.
     </p>
 
     <ul>
@@ -36,57 +106,89 @@
       <li><b>Idioma:</b> Japonês</li>
       <li><b>Fuso Horário:</b> UTC +9</li>
       <li><b>Visto:</b> Dispensa para turismo de até 90 dias</li>
+      <li><b>População:</b> Aproximadamente 125 milhões</li>
+      <li><b>Clima:</b> Quatro estações bem definidas – primavera com sakuras e outono com folhas coloridas</li>
     </ul>
   </section>
 
   <!-- ROTEIRO -->
   <section id="roteiro" class="container">
-    <h2>🗺️ Roteiro de 5 Dias</h2>
+    <h2>🗺️ Roteiro Detalhado de 5 Dias</h2>
 
     <div class="dia">
       <h3>Dia 1 – Tóquio</h3>
-      <p>Chegada ao aeroporto de Narita. Passeio pela Torre de Tóquio e bairro de Akihabara.</p>
+      <p>Chegada ao aeroporto de Narita. Explore a Torre de Tóquio para vistas panorâmicas e passeie pelo bairro eletrônico de Akihabara.</p>
+      <ul>
+        <li>Check-in no hotel</li>
+        <li>Passeio noturno em Shinjuku</li>
+      </ul>
     </div>
 
     <div class="dia">
       <h3>Dia 2 – Shibuya</h3>
-      <p>Visita ao cruzamento de Shibuya, à estátua de Hachiko e ao museu teamLab Planets.</p>
+      <p>Conheça o famoso cruzamento de Shibuya e a estátua de Hachiko. Visite o museu interativo teamLab Planets.</p>
+      <ul>
+        <li>Compras em Shibuya 109</li>
+        <li>Experiência gastronômica: sushi e ramen</li>
+      </ul>
     </div>
 
     <div class="dia">
       <h3>Dia 3 – Hiroshima</h3>
-      <p>Viagem de trem-bala. Visita ao Parque Memorial da Paz e ao Museu da Bomba Atômica.</p>
+      <p>Viagem de trem-bala até Hiroshima. Visita ao Parque Memorial da Paz e Museu da Bomba Atômica para aprendizado histórico.</p>
+      <ul>
+        <li>Explorar a Ilha de Miyajima (Torii flutuante)</li>
+        <li>Experiência cultural: Okonomiyaki local</li>
+      </ul>
     </div>
 
     <div class="dia">
       <h3>Dia 4 – Osaka</h3>
-      <p>Visita ao Castelo de Osaka e passeio noturno por Dotonbori.</p>
+      <p>Visite o Castelo de Osaka, um ícone histórico, e aproveite o passeio noturno em Dotonbori, famoso por luzes e gastronomia.</p>
+      <ul>
+        <li>Compras e souvenirs em Shinsaibashi</li>
+        <li>Provar takoyaki e street food local</li>
+      </ul>
     </div>
 
     <div class="dia">
       <h3>Dia 5 – Quioto</h3>
-      <p>Visita ao Templo Dourado (Kinkaku-ji) e ao Santuário Fushimi Inari.</p>
+      <p>Explore templos históricos como o Kinkaku-ji (Templo Dourado) e o Fushimi Inari com milhares de portões torii.</p>
+      <ul>
+        <li>Passeio pelo bairro histórico Gion</li>
+        <li>Aprender sobre cerimônia do chá tradicional</li>
+      </ul>
     </div>
+  </section>
+
+  <!-- CULTURA -->
+  <section id="cultura" class="container">
+    <h2>🎎 Cultura e Curiosidades</h2>
+    <p>
+      O Japão possui uma cultura rica, que mescla tradições milenares e modernidade tecnológica:
+    </p>
+    <ul>
+      <li><b>Tradição:</b> cerimônias de chá, ikebana (arranjo floral), kimono e festivais como Hanami.</li>
+      <li><b>Gastronomia:</b> sushi, ramen, tempura, okonomiyaki e street foods únicas em cada cidade.</li>
+      <li><b>Tecnologia:</b> transporte eficiente, robótica avançada e cidades futuristas.</li>
+      <li><b>Curiosidade:</b> Tóquio possui mais de 200 estações de trem e metrô, tornando o transporte público muito eficiente.</li>
+    </ul>
   </section>
 
   <!-- GEOPOLÍTICA -->
   <section id="geopolitica" class="container">
-    <h2>📚 Análise Geopolítica e Econômica</h2>
+    <h2>📚 Geopolítica e Economia</h2>
     <p>
-      O Japão é uma potência global, atualmente a 3ª maior economia do mundo.
-      Após sua reconstrução pós-guerra, tornou-se referência em tecnologia, inovação e diplomacia.
+      O Japão é uma potência global e a 3ª maior economia do mundo. Após a reconstrução pós-Segunda Guerra, tornou-se referência em inovação, diplomacia e tecnologia.  
+      Destaca-se nos setores de automóveis, eletrônicos, robótica e cultura pop.
     </p>
   </section>
 
   <!-- COMPRA -->
   <section id="contato" class="container destaque">
     <h2>💳 Comprar Pacote (Fictício)</h2>
-    <p>
-      Pacote completo de 5 dias com passagens, hospedagem e passeios incluídos.
-    </p>
-
+    <p>Pacote completo de 5 dias, incluindo passagens, hospedagem, passeios e experiências culturais.</p>
     <h3>💰 Preço: R$ 12.800,00</h3>
-
     <button onclick="alert('Compra simulada! Obrigado por escolher o Japão 🇯🇵')">
       Comprar Pacote
     </button>
